@@ -1,15 +1,16 @@
-﻿# Fake News Detection Using Machine Learning
+﻿# Fake News Detection System Using Machine Learning
 
 ## Project Overview
-Fake News Detection is a machine learning project developed to classify news articles as Fake or Real using Natural Language Processing (NLP).
+The Fake News Detection System is a machine learning-based application that predicts whether a given news article is REAL or FAKE.
 
-The system analyzes news text and predicts its category using TF-IDF feature extraction and Logistic Regression.
+The system uses Natural Language Processing (NLP), TF-IDF Vectorization, and Logistic Regression to analyze news text and generate predictions with a confidence score.
 
 ## Objectives
-- Identify potentially fake news articles.
-- Classify news as Fake or Real.
-- Apply Natural Language Processing techniques.
-- Build an interactive web application for news prediction.
+- To identify fake and real news articles.
+- To preprocess and analyze news text.
+- To implement a machine learning classification model.
+- To develop a simple and interactive web application.
+- To display prediction results and model confidence.
 
 ## Technologies Used
 - Python
@@ -18,61 +19,103 @@ The system analyzes news text and predicts its category using TF-IDF feature ext
 - TF-IDF Vectorization
 - Logistic Regression
 - Scikit-learn
-- Streamlit
 - Pandas
+- NumPy
+- Streamlit
+- VS Code
+
+## Algorithm Used
+
+### 1. TF-IDF Vectorization
+TF-IDF converts text into numerical features based on the importance of words in the news articles.
+
+### 2. Logistic Regression
+Logistic Regression is used as a classification algorithm to predict whether the given news article is REAL or FAKE.
 
 ## Project Structure
 
-    Fake_News_Detection/
-    ├── Dataset/
-    │   ├── Fake.csv
-    │   └── True.csv
-    ├── app.py
-    ├── data_analysis.py
-    ├── train_model.py
-    ├── fake_news_model.pkl
-    ├── tfidf_vectorizer.pkl
-    └── README.md
-
-## Methodology
-1. Dataset Collection
-2. Data Preprocessing
-3. Text Cleaning
-4. TF-IDF Feature Extraction
-5. Logistic Regression Model Training
-6. Model Evaluation
-7. News Classification
-8. Streamlit Web Application Development
-
-## Machine Learning Algorithm
-
-### TF-IDF
-Converts text into numerical features based on word importance.
-
-### Logistic Regression
-Classifies processed news text into Fake or Real categories.
+```text
+Fake_News_Detection/
+│
+├── Dataset/
+│   ├── Fake.csv
+│   └── True.csv
+│
+├── Screenshots/
+│   ├── Fake_News_Test.png
+│   ├── Fake_News_Test1.png
+│   ├── Real_News_test.png
+│   └── homepage.png
+│
+├── app.py
+├── data_analysis.py
+├── train_model.py
+├── cleaned_news.csv
+├── fake_news_model.pkl
+├── tfidf_vectorizer.pkl
+├── requirements.txt
+└── README.md
+```
 
 ## Installation and Execution
 
-### 1. Clone Repository
+### Step 1: Clone the Repository
 
-    git clone https://github.com/ameenazuha786-wq/Fake-News-Detection-ML.git
+```bash
+git clone https://github.com/ameenazuha786-wq/Fake-News-Detection-ML.git
+```
 
-### 2. Install Dependencies
+### Step 2: Open the Project Folder
 
-    pip install pandas scikit-learn streamlit
+```bash
+cd Fake-News-Detection-ML
+```
 
-### 3. Run Application
+### Step 3: Install Dependencies
 
-    streamlit run app.py
+```bash
+pip install -r requirements.txt
+```
 
-## Project Output
-The application accepts news text and predicts whether the news is Fake or Real.
+### Step 4: Run the Application
 
-## Disclaimer
-This is a machine learning prediction and not independent verification of news.
+```bash
+streamlit run app.py
+```
 
-## Developed By
-Ameena Zuha
+The application will open in your web browser.
 
-Machine Learning Project
+## How It Works
+1. Enter a news headline or article.
+2. Click the Predict News button.
+3. The application processes the text.
+4. TF-IDF converts the text into numerical features.
+5. Logistic Regression predicts the news category.
+6. The application displays the prediction and confidence score.
+
+## Screenshots
+
+The Screenshots folder contains:
+- Homepage of the application.
+- Fake news testing results.
+- Real news testing results.
+
+## Results
+The application successfully runs and generates predictions for the entered news articles.
+
+**Note:** Predictions are based on the trained machine learning model and should not be considered independent verification of news.
+
+## Future Enhancements
+- Improve model accuracy using larger and more diverse datasets.
+- Explore advanced machine learning and deep learning algorithms.
+- Integrate real-time news verification sources.
+- Develop a more advanced user interface.
+
+## Author
+**Ameena Zuha**
+
+## GitHub Repository
+https://github.com/ameenazuha786-wq/Fake-News-Detection-ML
+
+---
+Developed as a Machine Learning project using Python, TF-IDF and Logistic Regression.
